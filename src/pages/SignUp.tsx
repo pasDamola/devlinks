@@ -55,7 +55,15 @@ function SignUp() {
                       aria-label={""}
                     />
                   </InputLeftElement>
-                  <Input placeholder="alex@gmail.com" id="email" type="email" />
+                  <Input
+                    _focus={{
+                      boxShadow: "0px 0px 32px 0px rgba(99, 60, 255, 0.25)",
+                    }}
+                    focusBorderColor="#633CFF"
+                    placeholder="alex@gmail.com"
+                    id="email"
+                    type="email"
+                  />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -71,6 +79,10 @@ function SignUp() {
                     />
                   </InputLeftElement>
                   <Input
+                    _focus={{
+                      boxShadow: "0px 0px 32px 0px rgba(99, 60, 255, 0.25)",
+                    }}
+                    focusBorderColor="#633CFF"
                     id="password"
                     name="password"
                     type="password"
@@ -93,6 +105,10 @@ function SignUp() {
                     />
                   </InputLeftElement>
                   <Input
+                    _focus={{
+                      boxShadow: "0px 0px 32px 0px rgba(99, 60, 255, 0.25)",
+                    }}
+                    focusBorderColor="#633CFF"
                     id="confirm"
                     name="confirm"
                     type="password"
