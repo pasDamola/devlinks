@@ -53,13 +53,17 @@ function Login() {
       py={{ base: "12", md: "24" }}
       px={{ base: "0", sm: "8" }}
     >
-      <Stack spacing="8">
-        <HStack justifyContent="center">
+      <Stack spacing="10">
+        <HStack
+          mb="5"
+          justifyContent={{ base: "flex-start", sm: "center" }}
+          px={{ base: 6 }}
+        >
           <img src="/public/logo.svg" />
         </HStack>
         <Box
           py={{ base: "0", sm: "8" }}
-          px={{ base: "4", sm: "10" }}
+          px={{ base: "6", sm: "10" }}
           bg={{ base: "transparent", sm: "bg.surface" }}
           boxShadow={{ base: "none", sm: "md" }}
           borderRadius={{ base: "none", sm: "xl" }}
@@ -184,12 +188,16 @@ function Login() {
                 </Stack>
               </Stack>
             </form>
-            <Text textAlign="center" color="fg.muted">
-              Don't have an account?{" "}
+            <HStack
+              spacing={{ base: "none", sm: 1 }}
+              justifyContent="center"
+              flexDirection={{ base: "column", sm: "row" }}
+            >
+              <Text color="fg.muted">Don't have an account? </Text>
               <Link style={{ color: "#633CFF" }} to="/signup">
                 Create account
               </Link>
-            </Text>
+            </HStack>
           </Stack>
         </Box>
       </Stack>
