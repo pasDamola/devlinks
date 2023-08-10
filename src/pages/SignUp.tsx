@@ -56,8 +56,12 @@ function SignUp() {
       py={{ base: "12", md: "24" }}
       px={{ base: "0", sm: "8" }}
     >
-      <Stack spacing="8">
-        <HStack justifyContent="center">
+      <Stack spacing="10">
+        <HStack
+          mb="5"
+          justifyContent={{ base: "flex-start", sm: "center" }}
+          px={{ base: 6 }}
+        >
           <img src="/public/logo.svg" />
         </HStack>
         <Box
@@ -194,9 +198,11 @@ function SignUp() {
                     />
                   </InputGroup>
                 </FormControl>
-                <Text fontSize="xs" color="#737373">
-                  Password must contain at least 8 characters
-                </Text>
+                <Stack mb="7">
+                  <Text fontSize="xs" color="#737373">
+                    Password must contain at least 8 characters
+                  </Text>
+                </Stack>
               </Stack>
 
               <Stack>
